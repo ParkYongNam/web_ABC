@@ -8,19 +8,20 @@ li {
     list-style: none;
 }
 
-a:hover {
-    color: red;
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .bg-check {
     background-color: gray;
 }
 
-.position-rel {
+.rel {
     position: relative;
 }
 
-.position-abs {
+.abs {
     position: absolute;
 }
 
@@ -59,4 +60,40 @@ a:hover {
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+
+#hd {
+    background-color: dodgerblue;
+}
+
+.d2ul {
+    overflow: hidden;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transition: 0.5s;
+}
+
+.d1li:hover .d2ul {
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.d1li:hover .d2ul>li>a {
+    color: #333;
+}
+
+.d1li>a {
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    line-height: 100px;
+    background-color: darkblue;
+}
+
+.d1li>a:hover {
+    background-color: darkblue;
+    opacity: .5;
 }
